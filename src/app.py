@@ -14,3 +14,7 @@ def hello():
 def sum(a: int, b: int):
     nums_suim = a + b
     return str(nums_suim)
+@app.route('/mult/<int:a>/<int:b>')
+def mult(a: int , b: int):
+    result = float (a * b)
+    return str(result)

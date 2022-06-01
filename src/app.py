@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return "By Code!"
 
+@app.route('/hello')
+def hello():
+    return "Hello World!"
+
 @app.route('/sum/<int:a>/<int:b>')
 def sum(a: int, b: int):
     nums_suim = a + b
